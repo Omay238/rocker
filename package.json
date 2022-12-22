@@ -1,0 +1,28 @@
+{
+  "name": "rocker",
+  "version": "1.0.0",
+  "description": "rocker games website",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Omay238/rocker.git"
+  },
+  "keywords": [
+    "games",
+    "unblocked",
+    "javascript"
+  ],
+  "author": "Omay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Omay238/rocker/issues"
+  },
+  "homepage": "https://github.com/Omay238/rocker#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nunjucks": "^3.2.3"
+  }
+}
