@@ -4,12 +4,15 @@ const app = express();
 const port = 3000;
 const path = require("path");
 
-nunjucks.express(app);
+nunjucks.configure('views', {
+    autoescape: true,
+    express: app
+});
 
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-	res.send("Hello, World!");
+	res.render("index.njk");
 });
 
 app.listen(port, () => {
